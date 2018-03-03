@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Who Wants To Be A Billionaire?</title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="../triviagame/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="parallax-container" id='parall'>
+        <section id="intro">
+            <h1 class="center-align" id='header'>Who Wants To Be A Billionaire?</h1>
+            <div class="row" id="introCard">
+                <div class="col s6 offset-s3">
+                    <div class="center-align">
+                        <span>Business Trivia</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="buttonRow">
+                <div class="col s3 offset-s3 center-align">
+                    <a class="waves-effect waves-light btn-large btn-flat tooltipped" data-position="left" data-delay="50" data-tooltip="Click To Start." id="startButton">Start</a>
+                </div>
+                <div class="col s3 center-align">
+                    <a class="modal-trigger waves-effect waves-light btn-large btn-flat tooltipped" data-position="right" data-delay="50" data-tooltip="Click For Instructions." href="#instructionModal" id="instructionButton">Instructions</a>
+                </div>
+            </div>
+
+            <section id="questionSpace" class="container">
+                <div class="row">
+                    <div class="col s12 center-align" id="timer">
+
+                    </div>
+                </div>
+                <div class="row" id="message">
+                    <div class="col s12" id="gameMessage">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="questionContainer" class="col s12 center-align">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="choices" class="col s8 offset-s2 center-align">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="parallax"></div>
+
+    </div>
+
+    <div id="instructionModal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h3>Instructions</h3>
+            <p>Welcome to Who Wants To Be A Billionaire Trivia. As you all know, I love Coca-Cola. I've been drinking it my whole life. I eat like a six year old. Look, what I mean to say is... have fun. Enjoy your time while you have it. I'm sure by the end of it, you'll come to realize, it's not always about the money.   </p>
+            <p>
+                At the end of this trivia, you will get a score. Don't worry too much about it. As I've always said before, "It is not necessary to do extraordinary things to get extraordinary results."
+                Press START and have fun. 
+            </p>
+            <div class="center-align">
+                <img src="/Users/mike/Documents/UTProgramming/Homework/triviagame2/images/warrenbuffett.jpeg" id="instructionGIF">
+            </div>
+        </div>
+        <div class="modal-footer" id="instructionModalFooter">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat tooltipped" data-position="bottom" data-delay="50" data-tooltip="Whatever, Dude." id="instructionConfirm">Ok</a>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/dce08cf54a.js"></script>
+    <script src="../triviagame/javascript/app.js"></script>
+</body>
+
+</html>
